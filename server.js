@@ -1,4 +1,16 @@
 #!/usr/bin/env node
+// ╔══════════════════════════════════════════════════════════════════╗
+// ║           MY PERSONAL HTTP SERVER — Professional Edition         ║
+// ║                                                                  ║
+// ║   Copyright © 2025 Wil Rivera. Todos los derechos reservados.   ║
+// ║   Este software es propiedad exclusiva de Wil Rivera.           ║
+// ║   Queda prohibida su reproducción, distribución o modificación  ║
+// ║   sin autorización expresa y por escrito del autor.             ║
+// ║                                                                  ║
+// ║   Author  : Wil Rivera                                          ║
+// ║   Version : 2.0.0                                               ║
+// ║   License : Proprietary — All Rights Reserved                   ║
+// ╚══════════════════════════════════════════════════════════════════╝
 "use strict";
 
 const http   = require("http");
@@ -372,6 +384,9 @@ html,body{display:flex;align-items:center;justify-content:center;min-height:100v
     </form>
     <div class="hint">Por defecto: <strong>admin1234</strong> — cámbiala en Ajustes</div>
   </div>
+  <div style="text-align:center;margin-top:16px;font-size:10px;color:#33333f;letter-spacing:.5px;">
+    © 2025 <span style="color:#7c6aff88;">Wil Rivera</span> — Todos los derechos reservados
+  </div>
 </div></body></html>`;
 }
 
@@ -555,6 +570,19 @@ function dashboardPage(cfg) {
       </div>
 
     </div><!-- /page -->
+
+    <!-- FOOTER -->
+    <footer style="border-top:1px solid var(--bd);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;background:var(--bg1);">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:22px;height:22px;background:linear-gradient(135deg,var(--p),#4f3dcc);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:10px;box-shadow:var(--glow);">⬡</div>
+        <span style="font-family:'Syne',sans-serif;font-size:12px;font-weight:600;color:var(--t1);">HTTP Server</span>
+        <span style="font-size:10px;color:var(--t3);">v2.0.0</span>
+      </div>
+      <div style="font-size:10px;color:var(--t2);letter-spacing:.5px;">
+        © 2025 <span style="color:var(--p3);font-weight:500;">Wil Rivera</span> — Todos los derechos reservados
+      </div>
+    </footer>
+
   </div><!-- /main-content -->
 </div><!-- /shell -->
 
@@ -1212,9 +1240,10 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, "0.0.0.0", () => {
-  console.log("\n══════════════════════════════════════════");
-  console.log("  HTTP SERVER — v2.0 Professional Edition");
-  console.log("══════════════════════════════════════════");
+  console.log("\n╔══════════════════════════════════════════════╗");
+  console.log("║   HTTP SERVER — v2.0 Professional Edition    ║");
+  console.log("║   © 2025 Wil Rivera. All Rights Reserved.    ║");
+  console.log("╚══════════════════════════════════════════════╝");
   console.log(`\n  Local:   http://localhost:${PORT}`);
   console.log(`  Admin:   http://localhost:${PORT}/admin`);
   console.log(`  Pass:    ${process.env.ADMIN_PASSWORD || "admin1234"}`);
