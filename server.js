@@ -1,4 +1,25 @@
 #!/usr/bin/env node
+// ┌─────────────────────────────────────────────────────────────────────────┐
+// │                                                                         │
+// │   ██╗    ██╗██╗██╗      ██████╗ ██╗██╗   ██╗███████╗██████╗           │
+// │   ██║    ██║██║██║      ██╔══██╗██║██║   ██║██╔════╝██╔══██╗          │
+// │   ██║ █╗ ██║██║██║      ██████╔╝██║██║   ██║█████╗  ██████╔╝          │
+// │   ██║███╗██║██║██║      ██╔══██╗██║╚██╗ ██╔╝██╔══╝  ██╔══██╗          │
+// │   ╚███╔███╔╝██║███████╗ ██║  ██║██║ ╚████╔╝ ███████╗██║  ██║          │
+// │    ╚══╝╚══╝ ╚═╝╚══════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝          │
+// │                                                                         │
+// │   Personal HTTP Server — Professional Edition v3.0                     │
+// │                                                                         │
+// │   Copyright © 2025 Wil Rivera. Todos los derechos reservados.          │
+// │   Propiedad intelectual exclusiva de Wil Rivera.                       │
+// │   Prohibida su reproducción o distribución sin autorización.           │
+// │                                                                         │
+// │   Author   : Wil Rivera                                                │
+// │   Version  : 3.0.0                                                     │
+// │   License  : Proprietary — All Rights Reserved                         │
+// │                                                                         │
+// └─────────────────────────────────────────────────────────────────────────┘
+"use strict";
 // ╔══════════════════════════════════════════════════════════════════╗
 // ║           MY PERSONAL HTTP SERVER — Professional Edition         ║
 // ║                                                                  ║
